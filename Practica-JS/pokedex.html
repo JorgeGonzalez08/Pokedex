@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="pokedex.css">
+</head>
+
+<body>
+    <h1>Pokedex LaunchX</h1>
+    <div class="pokedex">
+        <div class="screen1">
+            <div class="pokePhoto">
+                <img src="pokebola.png" alt="Pokemon" id="pokeImg" class="image">
+            </div>
+            <div class="pokeScreen1" id="names"></div>
+        </div>
+        <div class="screen2">
+            <div class="buscar">
+                <div class="pokeInfo">
+                    <form class="form">
+                        <input type="text" placeholder="Ingresa un numero" name="pokeName" id="pokeName" class="input">
+                        <button onclick="fetchPokemon()" type="reset" >Buscar Pokemon</button>
+                    </form>
+                </div>
+            </div>
+            <div class="info">
+                <div class="pokeScreen2" id="abilities">
+                    <p></p>
+                </div>
+                <div class="stacks">
+                    <div class="atributos">
+                        <div class="pokeScreen3 " id="hp">
+                            <p> </p>
+                        </div>
+                        <div class="pokeScreen3 pokeScreen3--cambio" id="hp-attribute">
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="atributos">
+                        <div class="pokeScreen3 " id="attack">
+                            <p> </p>
+                        </div>
+                        <div class="pokeScreen3 pokeScreen3--cambio" id="attack-attribute">
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="atributos">
+                        <div class="pokeScreen3 " id="defense">
+                            <p> </p>
+                        </div>
+                        <div class="pokeScreen3 pokeScreen3--cambio" id="defense-attribute">
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="atributos">
+                        <div class="pokeScreen3 " id="special-attack">
+                            <p> </p>
+                        </div>
+                        <div class="pokeScreen3 pokeScreen3--cambio" id="special-attack-attribute">
+                            <p></p>
+                        </div>
+                    </div>
+                        <div class="atributos">
+                        <div class="pokeScreen3 " id="special-defense">
+                            <p> </p>
+                        </div>
+                        <div class="pokeScreen3 pokeScreen3--cambio" id="special-defense-attribute">
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="atributos">
+                        <div class="pokeScreen3  pokeScreen3--cambio1" id="speed">
+                            <p> </p>
+                        </div>
+                        <div class="pokeScreen3 pokeScreen3--cambio pokeScreen3--cambio1" id="speed-attribute">
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<footer>
+    <script src="pokedex.js"></script>
+</footer>
+
+</html>
